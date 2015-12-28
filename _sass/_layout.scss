@@ -91,8 +91,32 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+  text-align: center;
+  overflow: hidden;
+  margin: 5% auto 10%;
+  -webkit-font-smoothing: antialiased;
+
+  a {
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  .footer-links {
+
+    .social-icons{
+      display: block;
+      margin-top: 30px;
+      font-size: 120%;
+      vertical-align: middle;
+    }
+  }
+
+  .copyright {
+    display: block;
+    margin: 30px auto 0;
+  }
 }
 
 .footer-heading {
