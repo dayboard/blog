@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-
 <div class="home">
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
+        <img src="{{ site.baseurl }}{{ post.teaser_src }}" class="teaser-img" />
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
