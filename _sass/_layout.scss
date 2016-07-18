@@ -17,6 +17,25 @@
   }
 }
 
+.blog {
+  background: $g3 url("/blog/assets/images/world-map.png") no-repeat;
+  background-size:100%;
+  color: $ow6;
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+
+  a {
+    position: relative;
+    top: 35px;
+    left: 70%;
+    margin: 0 0 0 15px;
+    color: #fff
+  }
+
+  #logo { margin: 0 auto 15px; }
+}
+
 #logo {
   font-size:30px;
   text-align: center;
@@ -26,6 +45,8 @@
   float:left;
   -webkit-font-smoothing: antialiased;
   margin-right: 20px;
+  position: relative;
+  top: -50px;
 
   a {
     color: inherit;
@@ -41,39 +62,6 @@
     text-transform: uppercase;
     text-align: right;
     line-height: 100%;
-  }
-}
-
-.blog {
-  background: $g3 url("/blog/assets/images/world-map.png") no-repeat;
-  background-size:100%;
-  color: $ow6;
-  padding: 5%;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-
-  #logo { margin: 0 auto 15px; }
-
-  h1 {
-    font-size: 32px;
-    line-height: 38px;
-    margin: 50px auto 15px;
-    max-width: 700px;
-    clear:both;
-
-    em {
-      font-style: italic;
-      letter-spacing: 1px;
-    }
-  }
-
-  h3 {
-    font-size: 20px;
-    line-height: 26px;
-    max-width: 580px;
-    margin: 0 auto 50px;
-    -webkit-font-smoothing: antialiased;
   }
 }
 
@@ -153,11 +141,7 @@
     }
 }
 
-
-
-/**
- * Site footer
- */
+/*** Site footer */
 .site-footer {
   background-color: $dg1;
   border-top: 1px solid $grey-color-light;
@@ -263,11 +247,18 @@
 }
 
 .post-list {
-    margin-left: 0;
+    margin: 0 auto;
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+      margin-bottom: $spacing-unit;
+      border-bottom: 1px solid #ccc;
+
+      .teaser-img {
+        width: 100%;
+        min-height: 250px;
+        margin-bottom: 10px;
+      }
     }
 }
 
@@ -283,9 +274,7 @@
 
 
 
-/**
- * Posts
- */
+/*** Posts */
 .post-header {
     margin-bottom: $spacing-unit;
 }

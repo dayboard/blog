@@ -6,16 +6,19 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <img src="{{ site.baseurl }}{{ post.teaser_src }}" class="teaser-img" />
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <img src="http://placekitten.com/g/600/250" class="teaser-img" />
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} • By <a href="http://twitter.com/{{post.author_twitter}}">{{ post.author }}</a></span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+
+        <p>{{ post.excerpt }}</p>
+        <p><a href="{{ post.url | prepend: site.baseurl }}">Read more &rarr;</a></p>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
