@@ -30,7 +30,17 @@
     top: 35px;
     left: 70%;
     margin: 0 0 0 15px;
-    color: #fff
+    color: #fff;
+
+    &.signup {
+      border: 1px solid $ow4;
+      border-radius: 5px;
+      background-color: $o4;
+      padding: 8px 10px;
+      text-decoration: none;
+
+      &:hover { border: 1px solid $ow4; }
+    }
   }
 
   #logo { margin: 0 auto 15px; }
