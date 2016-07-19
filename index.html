@@ -6,7 +6,7 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <img src="http://placekitten.com/g/600/250" class="teaser-img" />
+        <img src="{{post.teaser_src}}" class="teaser-img" />
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} • By <a href="http://twitter.com/{{post.author_twitter}}">{{ post.author }}</a></span>
 
         <h2>
