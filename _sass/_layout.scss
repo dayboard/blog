@@ -283,8 +283,10 @@
 
 /*** Posts */
 .post {
-  margin: 7% 35% 5% 10%;
-  padding-right: 50px;
+  margin: 0 auto;
+  max-width: 50%;
+  position: relative;
+  top: 250px;
 
   .post-header { margin-bottom: 40px; }
 
@@ -298,6 +300,7 @@
 
   .post-content {
     margin-bottom: $spacing-unit;
+    font-size: 22px;
 
     h2 {
       font-size: 32px;
