@@ -8,7 +8,9 @@
     {% include header.html %}
 
     <div class="post-header-img">
-      <img src="{{post.teaser_src}}">
+      {% if post.teaser_src %}
+        <img src="{{post.teaser_src}}"/>
+      {% endif %}
     </div>
 
     <div class="post">
