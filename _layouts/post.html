@@ -7,6 +7,12 @@
 
     {% include header.html %}
 
+    <div class="post-header-img">
+      {% if post.teaser_src %}
+        {{ post.teaser_src }}
+      {% endif %}
+    </div>
+
     <div class="post">
 
       <header class="post-header">
