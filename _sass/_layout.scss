@@ -211,14 +211,11 @@
     .teaser-body {
       padding: 15px;
 
-      h1 {
-        font-size: 30px;
-        margin-bottom: 15px;
-      }
+      .post-meta a { color: $g3; }
 
-      p {
-        font-size: 22px;
-      }
+      h1 { margin-bottom: 15px; }
+
+      .post-link { font-size: 28px; }
     }
   }
 
@@ -245,9 +242,9 @@
       .teaser-body {
         padding: 15px;
 
-        h2 {
-          margin-bottom: 15px;
-        }
+        .post-meta a { color: $g3; }
+
+        h2 { margin-bottom: 15px; }
       }
     }
   }
