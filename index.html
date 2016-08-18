@@ -3,24 +3,39 @@ layout: default
 ---
 <div class="home">
 
+  {% assign featured_post = site.posts.first %}
+  <div class="featured_post">
+    <div class="teaser-wrapper">
+      <img src="{{featured_post.teaser_src}}" class="teaser-img" />
+    </div>
+    <span class="post-meta">{{ featured_post.date | date: "%b %-d, %Y" }} • By <a href="http://twitter.com/{{featured_post.author_twitter}}">{{ featured_post.author }}</a></span>
+    <h2>
+      <a class="post-link" href="{{ featured_post.url | prepend: site.baseurl }}">{{ featured_post.title }}</a>
+    </h2>
+
+    <p>{{ featured_post.excerpt }}</p>
+    <p><a href="{{ featured_post.url | prepend: site.baseurl }}">Read more &rarr;</a></p>
+  </div>
+
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <div class="teaser-wrapper">
-          <img src="{{post.teaser_src}}" class="teaser-img" />
-        </div>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} • By <a href="http://twitter.com/{{post.author_twitter}}">{{ post.author }}</a></span>
+      {% if post != featured_post %}
+        <li>
+          <div class="teaser-img-wrapper">
+            <img src="{{post.teaser_src}}" class="teaser-img" />
+          </div>
+          <section class="teaser-body">
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} • By <a href="http://twitter.com/{{post.author_twitter}}">{{ post.author }}</a></span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
 
-        <p>{{ post.excerpt }}</p>
-        <p><a href="{{ post.url | prepend: site.baseurl }}">Read more &rarr;</a></p>
-      </li>
+          <p>{{ post.excerpt }}</p>
+          <p><a href="{{ post.url | prepend: site.baseurl }}">Read more &rarr;</a></p>
+          </section>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
-
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
