@@ -6,15 +6,19 @@ layout: default
   {% assign featured_post = site.posts.first %}
   <div class="featured_post">
     <div class="teaser-wrapper">
-      <img src="{{featured_post.teaser_src}}" class="teaser-img" />
+      <a href="{{ featured_post.url | prepend: site.baseurl }}">
+        <img src="{{featured_post.teaser_src}}" class="teaser-img" />
+      </a>
     </div>
-    <span class="post-meta">{{ featured_post.date | date: "%b %-d, %Y" }} • By <a href="http://twitter.com/{{featured_post.author_twitter}}">{{ featured_post.author }}</a></span>
+    {% assign word_count = featured_post.content | number_of_words %}
+    {% assign read_time = word_count | divided_by: 200 %}
+    <span class="post-meta">{{ featured_post.date | date: "%b %Y" }} • By <a href="http://twitter.com/{{featured_post.author_twitter_handle}}">{{ featured_post.author }}</a> • {% if read_time == 0 %}1{% else %}{{ read_time }}{% endif %} min read</span>
     <h2>
       <a class="post-link" href="{{ featured_post.url | prepend: site.baseurl }}">{{ featured_post.title }}</a>
     </h2>
 
-    <p>{{ featured_post.excerpt }}</p>
-    <p><a href="{{ featured_post.url | prepend: site.baseurl }}">Read more &rarr;</a></p>
+    <p>{{ featured_post.excerpt | truncatewords: 60 }}</p>
+    <p>Read more &rarr;</p>
   </div>
 
   <ul class="post-list">
@@ -22,17 +26,20 @@ layout: default
       {% if post != featured_post %}
         <li>
           <div class="teaser-img-wrapper">
-            <img src="{{post.teaser_src}}" class="teaser-img" />
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+              <img src="{{post.teaser_src}}" class="teaser-img" />
+            </a>
           </div>
           <section class="teaser-body">
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} • By <a href="http://twitter.com/{{post.author_twitter}}">{{ post.author }}</a></span>
+            {% assign word_count = post.content | number_of_words %}
+            {% assign read_time = word_count | divided_by: 200 %}
+            <span class="post-meta">{{ post.date | date: "%b %Y" }} • By <a href="http://twitter.com/{{post.author_twitter_handle}}">{{ post.author }}</a> • {% if read_time == 0 %}1{% else %}{{ read_time }}{% endif %} min read</span>
 
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
 
-          <p>{{ post.excerpt }}</p>
-          <p><a href="{{ post.url | prepend: site.baseurl }}">Read more &rarr;</a></p>
+          <p>{{ post.excerpt | truncatewords: 30 }}</p>
           </section>
         </li>
       {% endif %}
