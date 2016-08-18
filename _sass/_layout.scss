@@ -219,6 +219,24 @@
     }
   }
 
+  .opt-in {
+    background-color: $ow6;
+    box-shadow: 0 0 1px #999;
+    display: inline-block;
+    margin: 1%;
+    max-width: 30%;
+    vertical-align: top;
+    width: 100%;
+
+    h2 {
+      color: $dg2;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
   .post-list {
     margin: 0 auto;
     list-style: none;
