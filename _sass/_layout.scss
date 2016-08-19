@@ -17,7 +17,7 @@
   }
 }
 
-.blog {
+.sponsored-by {
   background: $g3 url("/blog/assets/images/world-map.png") no-repeat;
   background-size:100%;
   color: $ow6;
@@ -25,25 +25,17 @@
   overflow: hidden;
   height: 100px;
 
-  a {
-    position: relative;
-    top: 35px;
-    left: 70%;
-    margin: 0 0 0 15px;
-    color: #fff;
+  h3 {
+    font-size: 16px;
+    margin: 1.5% 2% 0 65%;
+    text-align: left;
 
-    &.signup {
-      border: 1px solid $ow4;
-      border-radius: 5px;
-      background-color: $o4;
-      padding: 8px 10px;
-      text-decoration: none;
+    a {
+      color: $o4;
 
-      &:hover { border: 1px solid $ow4; }
+      :hover { color: $o3; }
     }
   }
-
-  #logo { margin: 0 auto 15px; }
 }
 
 #logo {
@@ -193,6 +185,11 @@
   max-width: $gallery-width;
   width: 100%;
 
+  .tagline {
+    text-align: center;
+    color: $dg1;
+  }
+
   .featured-post {
     box-shadow: 0 0 1px #999;
     display: inline-block;
@@ -209,7 +206,7 @@
     }
 
     .teaser-body {
-      padding: 15px;
+      padding: 25px;
 
       .post-meta a { color: $g3; }
 
@@ -258,7 +255,7 @@
       }
 
       .teaser-body {
-        padding: 15px;
+        padding: 25px;
 
         .post-meta a { color: $g3; }
 
@@ -270,6 +267,7 @@
   .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    text-transform: uppercase;
   }
 
   .post-link {
