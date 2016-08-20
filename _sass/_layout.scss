@@ -147,7 +147,30 @@
     &:hover { color: $ow6; }
   }
 
-  .footer-links {
+  .footer-leadgen {
+    max-width: 600px;
+    margin: 0 auto;
+
+    h2 { color: $ow6; }
+
+    a.orange-button {
+      background-color: $o3;
+      border: 1px solid $o1;
+      border-radius: 5px;
+      border-width: 1px 1px 3px;
+      color: $ow5;
+      font-weight: 600;
+      padding: 10px;
+
+      &:hover {
+        border: 1px solid $o2;
+        border-width: 1px 1px 3px;
+        color: $ow6;
+      }
+    }
+  }
+
+  /**.footer-links {
 
     .social-icons{
       display: block;
@@ -155,13 +178,7 @@
       margin-top: 30px;
       vertical-align: middle;
     }
-  }
-
-  .copyright {
-    color: $ow6;
-    display: block;
-    margin: 30px auto 0;
-  }
+  }*/
 }
 
 /* Gallery Layout */
