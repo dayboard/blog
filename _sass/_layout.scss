@@ -158,14 +158,14 @@
       border: 1px solid $o1;
       border-radius: 5px;
       border-width: 1px 1px 3px;
-      color: $ow5;
+      color: $ow6;
       font-weight: 600;
       padding: 10px;
 
       &:hover {
         border: 1px solid $o2;
         border-width: 1px 1px 3px;
-        color: $ow6;
+        color: #fff;
       }
     }
   }
@@ -344,7 +344,7 @@
     text-align: center;
 
     h2 {
-      color: $g3;
+      color: $dg2;
       font-size: 30px;
       font-weight: 600;
       padding-top: 20px;
@@ -355,6 +355,33 @@
       color: $dg2;
       font-size: $base-font-size;
       padding: 0 60px;
+    }
+
+    form {
+      margin-bottom: 30px;
+
+      input#email {
+        border: 2px solid $lg4;
+        font-size: 16px;
+        padding: 8px;
+        width: 220px;
+      }
+
+      input#submit {
+        background-color: $g3;
+        border: solid $g1;
+        border-radius: 3px;
+        border-width: 1px 1px 3px;
+        color: #fff;
+        display: inline-block;
+        font-size: 18px;
+        padding: 6px 12px;
+
+        &:hover {
+        border: solid $g2;
+        border-width: 1px 1px 3px;
+        }
+      }
     }
   }
 }
