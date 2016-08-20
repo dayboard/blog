@@ -26,4 +26,13 @@ layout: default
     {{ content }}
   </article>
 
+  <section class="opt-in">
+  {% if post.categories == productivity %}
+    <div>
+      <h2>Receive Productivity Tips in Your Inbox</h2>
+      <h3>We'll send you 1 - 2 articles every month to help you focus on what’s important, do amazing work, fight distractions, or find happiness.</h3>
+    </div>
+  {% endif %}
+  </section>
+
 </div>
