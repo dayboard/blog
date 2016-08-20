@@ -301,7 +301,7 @@
       color: $dg1;
       letter-spacing: -1px;
       line-height: 50px;
-      padding: 0 340px
+      padding: 0 340px;
 
       @include media-query($on-laptop) { font-size: 36px; }
     }
@@ -379,6 +379,7 @@
       input#email {
         border: 2px solid $lg4;
         font-size: 16px;
+        line-height: 21px;
         padding: 8px;
         width: 220px;
       }
@@ -391,7 +392,10 @@
         color: #fff;
         display: inline-block;
         font-size: 18px;
-        padding: 6px 12px;
+        padding: 8px 12px;
+        font-family: $proxima-stack;
+        position: relative;
+        bottom: 1px;
 
         &:hover {
         border: solid $g2;
