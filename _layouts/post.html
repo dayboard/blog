@@ -1,34 +1,47 @@
 ---
 layout: default
 ---
-<div class="post-header-img">
-  {% if page.teaser_src %}
-    <img src="{{ page.teaser_src}}"/>
-  {% endif %}
-</div>
 
 <div class="post">
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
-      {{ page.date | date: "%b %-d, %Y" }}
       {% if page.author %}
-        • Written by <a href="http://twitter.com/{{page.author_twitter}}">{{ page.author }}</a>
+        <em>by</em> <a href="http://twitter.com/{{page.author_twitter}}">{{ page.author }}</a><br/>
       {% endif %}
-
+      {{ page.date | date: "%b %-d, %Y" }}
       {% if page.meta %}
        • {{ page.meta }}
-      {% endif %}</p>
+      {% endif %}
+       • <a href="{{ site.url }}{{ page.url }}#disqus_thread">Comments</a>
+    </p>
   </header>
 
   <article class="post-content">
     {{ content }}
 
+    <div class="share-wrapper">
+
+      <section class="twitter share">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="true">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </section>
+
+      <section class="facebook share">
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href={{ site.url | uri_escape }}{{ page.url | uri_escape }}&layout=button_count&size=small&mobile_iframe=true&width=81&height=20&appId" width="81" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </section>
+
+      <section class="linkedin share">
+        <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+        <script type="IN/Share" data-counter="right"></script>
+      </section>
+    </div>
+
+
     <section class="opt-in">
       {% if post.categories == productivity %}
         <div>
-          <h2>Receive Productivity Tips in Your Inbox</h2>
+          <h2>Get Productivity Tips in Your Inbox</h2>
           <h3>We'll send you 1 - 2 articles every month to help you focus on what’s important, do amazing work, fight distractions, or find happiness.</h3>
         </div>
 
@@ -39,14 +52,25 @@ layout: default
         </form>
       {% endif %}
     </section>
+
+    <div id="disqus_thread"></div>
+      <script>
+
+      var disqus_config = function () {
+        this.page.url = "{{ site.url }}{{ page.url }}";
+        this.page.identifier = {% if page.disqus_identifier %}{{ page.disqus_identifier}}{% else %}"{{ site.url }}{{ page.url }}"{% endif %}
+        var disqus_url = '{{ site.url }}{{ page.url }}';
+      };
+
+      (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = '//dayboard.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
   </article>
-
-  <div class="share">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="true">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <div class="fb-share-button" data-layout="box_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse">Share</a></div>
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-    <script type="IN/Share" data-counter="top"></script>
-  </div>
-
 
 </div>

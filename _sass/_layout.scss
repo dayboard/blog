@@ -346,13 +346,24 @@
     }
   }
 
-  .share {
-    display: inline-block;
-    vertical-align: middle;
+  .share-wrapper {
+    display: block;
+    text-align: center;
+    margin: 0 0 20px;
+
+    .share {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px;
+    }
+
+    .linkedin {
+      margin-left: -15px;
+    }
   }
 
   .opt-in {
-    background-color: #fff;
+    background-color: #ffe;
     border: 6px solid #fff;
     box-shadow: 0 1px 5px rgba(0,0,1,.3),inset 0 0 18px rgba(0,0,0,.1);
     margin: 1px;
@@ -404,6 +415,8 @@
       }
     }
   }
+
+  #disqus_thread { padding: 30px 0; }
 }
 
 
