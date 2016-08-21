@@ -25,7 +25,8 @@ layout: default
         <a class="post-link" href="{{ featured_post.url | prepend: site.baseurl }}">{{ featured_post.title }}</a>
       </h1>
       <p>{{ featured_post.excerpt | truncatewords: 60 }}</p>
-      <span class="post-meta">By <a href="http://twitter.com/{{featured_post.author_twitter_handle}}">{{ featured_post.author }}</a> • {{ featured_post.date | date: "%b %Y" }}</span>
+      {% assign author = site.author[featured_post.author] %}
+      <span class="post-meta">By <a href="http://twitter.com/{{ author.twitter }}">{{ author.name }}</a> • {{ featured_post.date | date: "%b %Y" }}</span>
     </section>
   </div>
 
@@ -46,15 +47,15 @@ layout: default
           <section class="teaser-body">
             {% assign word_count = post.content | number_of_words %}
             {% assign read_time = word_count | divided_by: 200 %}
-            <span class="post-meta">{{featured_post.categories}} • {% if read_time == 0 %}1{% else %}{{ read_time }}{% endif %} min read</span>
+            <span class="post-meta">{{ post.categories}} • {% if read_time == 0 %}1{% else %}{{ read_time }}{% endif %} min read</span>
 
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
 
           <p>{{ post.excerpt | truncatewords: 30 }}</p>
-
-          <span class="post-meta">By <a href="http://twitter.com/{{featured_post.author_twitter_handle}}">{{ featured_post.author }}</a> • {{ featured_post.date | date: "%b %Y" }}</span>
+          {% assign author = site.author[post.author] %}
+          <span class="post-meta">By <a href="http://twitter.com/{{ author.twitter }}">{{ author.name }}</a> • {{ post.date | date: "%b %Y" }}</span>
           </section>
         </li>
       {% endif %}
