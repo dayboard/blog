@@ -13,3 +13,19 @@ facebook_username:  daybaordco
 
 # Build settings
 markdown: kramdown
+
+author:
+  jenn:
+    name: "Jennifer Lo"
+    display_name: "Jennifer"
+    avatar_url: "/blog/assets/images/avatars/jenn.jpg"
+    bio: >
+      She writes stuff.
+    twitter: jennlo_
+  john:
+    name: "John Chan"
+    display_name: "John"
+    avatar_url: "/blog/assets/images/avatars/john.jpg"
+    bio: >
+      He's awesome.
+    twitter: jtcchan
