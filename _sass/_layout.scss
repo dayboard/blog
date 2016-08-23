@@ -205,15 +205,60 @@
     color: $dg1;
     display: inline-block;
     margin: 10px 0 0 15px;
+    min-height: 480px;
     text-align: left;
     width: 33%;
     vertical-align: top;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .opt-in {
+
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        padding-right: 30px;
+      }
+
+       h3 { font-size: $base-font-size; }
+
+      input#email {
+        display: block;
+        font-size: 16px;
+        margin: 0 auto;
+        padding: 8px;
+        width: 280px;
+      }
+
+      input#submit {
+        background-color: $g3;
+        border: solid $g1;
+        border-radius: 3px;
+        border-width: 1px 1px 3px;
+        color: #fff;
+        display: block;
+        font-family: $proxima-stack;
+        font-size: 16px;
+        margin: 15px auto 0;
+        padding: 8px 12px;
+
+        &:hover {
+        border: solid $g2;
+        border-width: 1px 1px 3px;
+        cursor: pointer;
+        }
+      }
+    }
   }
 
   .featured-post {
     box-shadow: 0 0 1px #999;
     display: inline-block;
-    margin: 1%;
+    margin: 1% 1% 3% 1%;
     max-width: 62%;
     width: 100%;
 
@@ -453,6 +498,7 @@
         &:hover {
         border: solid $g2;
         border-width: 1px 1px 3px;
+        cursor: pointer;
         }
       }
     }

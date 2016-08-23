@@ -55,7 +55,7 @@ layout: default
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
 
-          <p>{{ post.excerpt | truncatewords: 30 }}</p>
+          <p>{{ post.excerpt | truncatewords: 25 }}</p>
           {% assign author = site.author[post.author] %}
           <span class="post-meta">By <a href="http://twitter.com/{{ author.twitter }}">{{ author.name }}</a> • {{ post.date | date: "%b %Y" }}</span>
           </section>
