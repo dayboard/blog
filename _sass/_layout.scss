@@ -414,24 +414,25 @@
 
   .author {
     overflow: auto;
-    padding: $spacing-unit;
+    padding: $spacing-unit 10px;
 
     @include media-query($on-laptop) {
-      padding: 5%;
+      padding: 5% 2%;
     }
 
     .profile {
+      border: none;
       border-radius: 50%;
-      max-width: 150px;
+      max-width: 120px;
       float: left;
       height: 100%;
-      max-height: 150px;
+      max-height: 120px;
       margin: 0 15px 0 0;
       width: 100%;
 
       @include media-query($on-laptop) {
-        max-height: 100px;
-        max-width: 100px;
+        max-height: 110px;
+        max-width: 110px;
       }
 
       @include media-query($on-palm) {
@@ -446,7 +447,7 @@
 
     h3,
     .bio {
-      margin-left: 165px;
+      margin-left: 135px;
 
       @include media-query($on-laptop) {
         margin-left: 115px;
@@ -456,6 +457,8 @@
         margin-left: 95px;
       }
     }
+
+    p { font-size: 18px; }
   }
 
   .opt-in {
