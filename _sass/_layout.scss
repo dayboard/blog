@@ -346,7 +346,7 @@
       color: $dg1;
       letter-spacing: -1px;
       line-height: 50px;
-      padding: 0 340px;
+      padding: 0 200px;
 
       @include media-query($on-laptop) { font-size: 36px; }
     }
