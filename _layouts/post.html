@@ -32,7 +32,9 @@ layout: default
     </section>
 
     {% if post.categories == productivity %}
-      {% include opt-in.html %}
+      <div class="highlight-box">
+        {% include opt-in.html %}
+      </div>
     {% endif %}
 
     <div id="disqus_thread"></div>
