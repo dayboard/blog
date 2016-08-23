@@ -5,18 +5,22 @@ layout: default
 <div class="post">
 
 {% assign author = site.author[page.author] %}
+{% assign word_count = page.content | number_of_words %}
+{% assign read_time = word_count | divided_by: 200 %}
 
   <header class="post-header">
+    <h3 class-"post-meta-category"><a href="{{ site.baseurl }}">Blog</a> • {{ page.categories }}</h3>
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
       {% if author %}
-        <em>by</em> <a href="http://twitter.com/{{ author.twitter }}">{{ author.name }}</a><br/>
+        <em>Written by</em> <a href="http://twitter.com/{{ author.twitter }}">{{ author.name }}</a><br/>
       {% endif %}
       {{ page.date | date: "%b %-d, %Y" }}
       {% if page.meta %}
        • {{ page.meta }}
       {% endif %}
        • <a href="{{ site.url }}{{ page.url }}#disqus_thread">Comments</a>
+       • {% if read_time == 0 %}1{% else %}{{ read_time }}{% endif %} min read
     </p>
   </header>
 
