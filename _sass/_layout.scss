@@ -7,6 +7,8 @@
   height: 120px;
   -webkit-font-smoothing: antialiased;
 
+  @include media-query($on-palm) { text-align: center; }
+
   .container {
     margin: 0 auto;
     max-width: 1440px;
@@ -23,6 +25,14 @@
       -webkit-font-smoothing: antialiased;
       margin: 30px 50px;
       position: relative;
+
+      @include media-query($on-laptop) { margin: 30px -10px; }
+
+      @include media-query($on-palm) {
+        display: inline-block;
+        margin: 50px auto;
+        float: none;
+      }
 
       a {
         color: inherit;
@@ -42,11 +52,19 @@
         text-align: left;
         width: 35%;
 
+        @include media-query($on-laptop) {
+          margin-right: -10px;
+          width: 60%;
+        }
+
+        @include media-query($on-palm) { display: none; }
+
         a {
           color: $o4;
 
           :hover { color: $o3; }
         }
+
       }
     }
   }
@@ -324,18 +342,14 @@
 }
 
 /*** Posts */
-.post-header-img {
-  max-width: 65%;
-  height: 400px;
-  margin: 6% auto 0;
-}
-
 .post {
   margin: 0 auto 6%;
   overflow: hidden;
   position: relative;
   top: 50px;
   width: 100%;
+
+  @include media-query($on-palm) { padding: 0 30px; }
 
   .post-header {
     margin-bottom: 40px;
@@ -353,7 +367,12 @@
       line-height: 50px;
       padding: 0 200px;
 
-      @include media-query($on-laptop) { font-size: 36px; }
+      @include media-query($on-laptop) {
+        font-size: 36px;
+        padding: 0 30px;
+      }
+
+      @include media-query($on-palm) { padding: 0 10px; }
     }
   }
 
@@ -416,9 +435,9 @@
     overflow: auto;
     padding: $spacing-unit 10px;
 
-    @include media-query($on-laptop) {
-      padding: 5% 2%;
-    }
+    @include media-query($on-laptop) { padding: 5% 2%; }
+
+    @include media-query($on-palm) { padding: 5% 0; }
 
     .profile {
       border: none;
@@ -436,8 +455,8 @@
       }
 
       @include media-query($on-palm) {
-        max-height: 80px;
-        max-width: 80px;
+        max-height: 90px;
+        max-width: 90px;
       }
     }
 
@@ -458,7 +477,11 @@
       }
     }
 
-    p { font-size: 18px; }
+    p {
+      font-size: 18px;
+
+      @include media-query($on-palm) { margin-left: 105px; }
+    }
   }
 
   .opt-in {
@@ -477,6 +500,8 @@
       color: $dg2;
       font-size: $base-font-size;
       padding: 0 60px;
+
+      @include media-query($on-palm) { padding: 0 20px; }
     }
 
     form {
@@ -488,6 +513,11 @@
         line-height: 21px;
         padding: 8px;
         width: 220px;
+
+        @include media-query($on-palm) {
+          font-size: 14px;
+          padding: 6px;
+        }
       }
 
       input#submit {
@@ -507,6 +537,11 @@
         border: solid $g2;
         border-width: 1px 1px 3px;
         cursor: pointer;
+        }
+
+        @include media-query($on-palm) {
+          font-size: 16px;
+          padding: 6px 10px;
         }
       }
     }
