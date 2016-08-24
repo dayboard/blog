@@ -474,9 +474,12 @@
 
     img {
       border: 1px solid #ccc;
-      margin: 0 0 3% 0.5%;
+      margin: 0 0 3% -10%;
+      max-width: 120%;
       padding: 10px;
       width: 120%;
+
+      @include media-query($on-laptop) { max-width: 100%; }
     }
 
     .twitter-tweet {
