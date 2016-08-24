@@ -24,7 +24,7 @@ layout: default
       <h1>
         <a class="post-link" href="{{ featured_post.url | prepend: site.baseurl }}">{{ featured_post.title }}</a>
       </h1>
-      <p>{{ featured_post.excerpt | truncatewords: 60 }}</p>
+      <p>{{ featured_post.excerpt | truncatewords: 40 }}</p>
       {% assign author = site.author[featured_post.author] %}
       <span class="post-meta">By <a href="http://twitter.com/{{ author.twitter }}">{{ author.name }}</a> • {{ featured_post.date | date: "%b %Y" }}</span>
     </section>
