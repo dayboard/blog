@@ -566,7 +566,7 @@
     h3 {
       color: $dg2;
       font-size: $base-font-size;
-      padding: 0 60px;
+      padding: 0 40px;
 
       @include media-query($on-palm) { padding: 0 20px; }
     }
