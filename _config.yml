@@ -21,7 +21,7 @@ author:
     display_name: "Jennifer"
     avatar_url: "/assets/images/avatars/jenn.jpg"
     bio: >
-      Jennifer Lo is the co-founder and marketing lead at Dayboard. She's always down for an outdoor adventure and drinking way too much wine.
+      Jennifer Lo is the co-founder and marketing lead at Dayboard. She's always down for an outdoor adventure, good company, and great wine.
     twitter: jennlo_
   john:
     name: "John Chan"
@@ -30,3 +30,9 @@ author:
     bio: >
       John Chan is the co-founder and product lead at Dayboard. He often thinks out loud and is perfectly happy with having a conversion with himself. When he's not building Dayboard, he's likely binge playing video games.
     twitter: jtcchan
+  abhi:
+    name: "Abhi Vair"
+    display_name: "Abhi"
+    avatar_url: "http://placekitten.com/g/90/90"
+    bio: >
+      Abhi Vair is a junior developer at Dayboard.
