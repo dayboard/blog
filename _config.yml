@@ -5,7 +5,6 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/blog/" # the subpath of your site, e.g. /blog/
 url: "http://blog.dayboard.co" # the base hostname & protocol for your site
 permalink: /:title
 
@@ -20,14 +19,14 @@ author:
   jenn:
     name: "Jennifer Lo"
     display_name: "Jennifer"
-    avatar_url: "/blog/assets/images/avatars/jenn.jpg"
+    avatar_url: "/assets/images/avatars/jenn.jpg"
     bio: >
       Jennifer Lo is the co-founder and marketing lead at Dayboard. She's always down for an outdoor adventure and drinking way too much wine.
     twitter: jennlo_
   john:
     name: "John Chan"
     display_name: "John"
-    avatar_url: "/blog/assets/images/avatars/john.jpg"
+    avatar_url: "/assets/images/avatars/john.jpg"
     bio: >
       John Chan is the co-founder and product lead at Dayboard. He often thinks out loud and is perfectly happy with having a conversion with himself. When he's not building Dayboard, he's likely binge playing video games.
     twitter: jtcchan
