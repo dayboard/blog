@@ -4,7 +4,11 @@
 
 Drafts are posts without a date. They’re posts you’re still working on and don’t want to publish yet. They are created in the #_drafts# folder, then using formula to name the file : title.md or title.html
 
-To preview your site with drafts, simply run #jekyll serve# or #jekyll build# with the #--drafts# switch. Each will be assigned the value modification time of the draft file for its date, and thus you will see currently edited drafts as the latest posts.
+To preview your site with drafts,
+
+run #bundle exec jekyll serve --drafts#
+
+Go to #localhost:4000/#
 
 # Publishing drafts live in Jekyll
 
