@@ -10,6 +10,10 @@ layout: default
 
 <div class="home">
 
+  <div class="section-heading">
+    <h2>Featured Post</h2>
+  </div>
+
   {% assign featured_post = site.posts.first %}
   <div class="featured-post">
     <div class="teaser-img-wrapper">
@@ -35,6 +39,10 @@ layout: default
     <h2>Our thoughts on productivity, psychology and mindfulness in today's tech-driven workplace.</h2>
 
     {% include opt-in.html %}
+  </div>
+
+  <div class="section-heading">
+    <h3>Most Recent</h3>
   </div>
 
   <ul class="post-list">
