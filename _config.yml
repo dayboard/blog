@@ -33,6 +33,15 @@ author:
   abhi:
     name: "Abhi Vair"
     display_name: "Abhi"
-    avatar_url: "http://placekitten.com/g/90/90"
+    avatar_url: "/assets/images/avatars/abhi.jpg"
     bio: >
       Abhi Vair is a junior developer at Dayboard.
+
+  # Guest Authors
+  kat:
+    name: "Kat Boogaard"
+    display_name: "Kat"
+    avatar_url: "/assets/images/avatars/kat.jpg"
+    bio: >
+      Kat is a Midwest-based freelance writer (writing this article for AND CO) who has a real passion for helping other freelancers grow their businesses. She has written for many publications including Forbes, Inc., Fast Company, Business Insider, Time, and Mashable.
+    twitter: kat_boogaard
