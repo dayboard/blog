@@ -146,6 +146,10 @@
     }
 }
 
+hr {
+  border-top: 1px solid $grey-color-light;
+  margin: 20px;
+}
 /*** Site footer */
 .site-footer {
   background-color: $dg1;
@@ -335,6 +339,7 @@
       width: 100%;
       max-height: 280px;
       overflow: hidden;
+      border-bottom: 0.5px solid $grey-color-light;
 
       @include media-query($on-palm) { max-height: 220px; }
 
@@ -381,6 +386,7 @@
         width: 100%;
         max-height: 180px;
         overflow: hidden;
+        border-bottom: 0.5px solid $grey-color-light;
 
         @include media-query($on-laptop) {
           display: inline-block;
@@ -504,10 +510,10 @@
     img,
     .wistia_responsive_wrapper {
       border: 1px solid #ccc;
-      margin: 3% 0 3% -10%;
+      margin: 0 0 3% -5%;
       max-width: 120%;
       padding: 10px;
-      width: 120%;
+      width: 110%;
 
       @include media-query($on-laptop) { max-width: 100%; }
     }
