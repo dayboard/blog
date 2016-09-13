@@ -2,10 +2,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="twitter:card" content="summary" />
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@dayboardco" />
+  <meta name="twitter:creator" content="{{ page.author.twitter }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.excerpt }}">
+  <meta name="twitter:image" content="{{ page.teaser_src }}">
 
   <script src="https://use.typekit.net/rgl4nrt.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
