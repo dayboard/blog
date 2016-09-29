@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Add important links to your tasks and stay organized!"
-date: 2016-09-30 07:35:54 UTC-05:00
+date: 2016-09-14 07:35:54 UTC-05:00
 categories: Updates
 author: abhi
-teaser_src: "http://placekitten.com/g/600/250"
+teaser_src: "/assets/images/product/ref-links-edit-highlighted.png"
 published: false
 excerpt: I hope you love product enhancements as much as we do because we've got a nifty update for you. Add links to your tasks and have quick access to important references via your Dayboard task list.
 ---
@@ -12,6 +12,8 @@ excerpt: I hope you love product enhancements as much as we do because we've got
 I hope you love product enhancements as much as we do because we've got a nifty update for you.
 
 You can now add reference links to a specific task and have easy access to the resources you need to accomplish your goals.
+
+![Alt](/assets/images/product/ref-links-edit-highlighted.png "Add Reference Links")
 
 ### How do I use it?
 
@@ -23,7 +25,7 @@ You can now add reference links to a specific task and have easy access to the r
 
 Check out the image below to see what I mean.
 
-![Alt](/assets/images/product/reference-link.png "Add Reference Links")
+![Alt](/assets/images/product/ref-links-focused.png "Add Reference Links")
 
 Ps. Your links will also be saved in history once the task has been completed, so you can go back and access the details at a later date if needed. :)
 
