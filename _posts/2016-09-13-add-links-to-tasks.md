@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Add important links to your tasks and stay organized!"
+date: 2016-09-30 07:35:54 UTC-05:00
 categories: Updates
 author: abhi
 teaser_src: "http://placekitten.com/g/600/250"
 published: false
-excerpt: Add links to your tasks and have quick access to important references via your Dayboard task list.
+excerpt: I hope you love product enhancements as much as we do because we've got a nifty update for you. Add links to your tasks and have quick access to important references via your Dayboard task list.
 ---
 
 I hope you love product enhancements as much as we do because we've got a nifty update for you.
