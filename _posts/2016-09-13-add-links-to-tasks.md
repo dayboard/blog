@@ -2,7 +2,7 @@
 layout: post
 title: "Add important links to your tasks and stay organized!"
 date: 2016-09-14 07:35:54 UTC-05:00
-categories: Updates
+categories: Product
 author: abhi
 teaser_src: "/assets/images/product/ref-links-edit-highlighted.png"
 published: false
