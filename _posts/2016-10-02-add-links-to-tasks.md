@@ -28,6 +28,6 @@ Check out the image below to see what I mean.
 
 ![Alt](/assets/images/product/ref-links-focused.png "Add Reference Links")
 
-Ps. Your links will also be saved in history once the task has been completed, so you can go back and access the details at a later date if needed. :)
+P.S. Your links will also be saved in history once the task has been completed, so you can go back and access the details at a later date if you wish. :)
 
 Think this will be useful? Are there any other updates or features you'd like to see us create for you? Let us know at <a href="mailto:support@dayboard.co">support@dayboard.co</a>.
