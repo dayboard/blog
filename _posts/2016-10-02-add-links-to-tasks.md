@@ -20,7 +20,7 @@ You can now add reference links to a specific task and have easy access to the r
 
 - Simply look for the link icon in next to your Dayboard task, beside the edit and delete icons.
 
-- Click and type in a link to specific task details, github repositories, calendar reminders, etc.
+- Click and type in a link to specific task details, GitHub repositories, calendar reminders, etc.
 
 - Hit enter when you're done, and you're ready to be more productive, just like that.
 
