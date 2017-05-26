@@ -6,12 +6,12 @@ categories: Product
 disqus_identifier:
 author: abhi
 teaser_src: "/assets/images/teaser/site-blocker-schedule.png"
-excerpt: "You can now have more control over when you want site blocking to occur using our scheduling feature. Before today, unless site blocking was turned off completely, the only way to turn it off was to either complete all of your tasks or click on the 'I'm done working for the day button'."
+excerpt: "You can now have more control over when you want site blocking to occur using our scheduling feature. Set active days, schedule break times, and quickly see how much distracting time you have left on any given moment."
 ---
 
 We've upgraded our [Site Blocker](https://blog.dayboard.co/website-blocker-chrome). Before today, unless site blocking was turned off completely, the only way to turn it off was to either complete all of your tasks or click on the 'I'm done working for the day button'.
 
-Now, you can have more control over the site blocker by scheduling when it's active.
+Now, you can have more control over the site blocker by scheduling when it should be active.
 
 ### How do you customize the schedule?
 
