@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Site Blockers Schedules and Browser Extension Icons"
-date: 2017-06-08 10:00:00 UTC-05:00
+date: 2017-06-08 02:00:00 UTC-05:00
 categories: Product
 disqus_identifier: 13
 author: abhi
