@@ -42,25 +42,22 @@ Now, you can have more control over the site blocker by scheduling *when* it sho
 
   - The website is not currently on your blocked list. Click on the browser icon to add it as a distracting site or to add tasks to your Dayboard.
 
-<div style="margin-top: -40px;">
-  <img src="/assets/images/product/site-blocker-break-green-notification.png" title="Dayboard's site blocker icon turns green to indicate you're on a website that can be blocked." alt="Dayboard Site Blocker Extension Icon - Green">
-</div>
-  
+  <div>
+    <img src="/assets/images/product/site-blocker-break-green-notification.png" title="Dayboard's site blocker icon turns green to indicate you're on a website that can be blocked." alt="Dayboard Site Blocker Extension Icon - Green">
+  </div>
+
   - Or you do not have any tasks listed on your Dayboard. Click the icon to add tasks to your Dayboard.
 
-<div style="margin-top: -40px;">
-  <img src="/assets/images/product/site-blocker-no-task-notification.png" title="Dayboard's site blocker are only active when you have a task set in Dayboard." alt="Dayboard Site Blocker Extension Icon - Green">
-</div>
+  <div>
+    <img src="/assets/images/product/site-blocker-no-task-notification.png" title="Dayboard's site blocker are only active when you have a task set in Dayboard." alt="Dayboard Site Blocker Extension Icon - Green">
+  </div>
 
   *If the icon is red*:
 
   - The website is on your blocked list. Click the browser icon to display how much time you have left on your break. When there's no time left, all of the distracting sites on your blocked list will be blocked for the rest of the day.
 
-site-blocker-break-red-notification.png
-site-blocker-no-task-notification.png
-
-<div style="margin-top: -40px;">
-  <img src="/assets/images/product/site-blocker-break-red-notification.png" title="Dayboard's site blocker icon turns red to indicate you're on a website that is on your blocked list." alt="Dayboard Site Blocker Extension Icon - Red">
-</div>
+  <div style="margin-bottom: -40px;">
+    <img src="/assets/images/product/site-blocker-break-red-notification.png" title="Dayboard's site blocker icon turns red to indicate you're on a website that is on your blocked list." alt="Dayboard Site Blocker Extension Icon - Red">
+  </div>
 
 Have any questions or comments? Let us know at [support@dayboard.co](mailto:support@dayboard.co).
