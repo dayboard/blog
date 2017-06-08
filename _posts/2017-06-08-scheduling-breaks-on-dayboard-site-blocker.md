@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Site Blockers Schedules and Browser Extension Icons"
+title: "Site Blocker Schedules and Browser Extension Icons"
 date: 2017-06-08 02:00:00 UTC-05:00
 categories: Product
 disqus_identifier: 13
@@ -10,15 +10,15 @@ teaser_src: "/assets/images/teaser/site-blocker-schedule.png"
 excerpt: "You can now have more control over when you want site blocking to occur using our scheduling feature. Set active days, schedule break times, and quickly see how much distracting time you have left on any given moment."
 ---
 
-We've released a few upgrades to our [Site Blocker](https://blog.dayboard.co/website-blocker-chrome): site blockers can now be scheduled! 
+We've released a few upgrades to our [Site Blocker](https://blog.dayboard.co/website-blocker-chrome): site blockers can now be scheduled, an icon that appears red and green depening on if the site blocker is active, and a single-click button to add distracting site on your blocked list.
 
-Before today, unless site blocking was turned off completely, the only way to turn it off was to either complete all of your tasks or click on the 'I'm done working for the day' button. Now, you can have more control over the site blocker by scheduling *when* it should be active. 
+Before today, unless site blocking was turned off completely, the only way to turn it off was to either complete all of your tasks or click on the 'I'm done working for the day' button. Now, you can have more control over the site blocker by scheduling *when* it should be active.
 
 ### How to Schedule Your Site Blockers
 
 1\. Go to your Dayboard extension settings and click on the 'Blocked Sites' tab.
 
-<div>  
+<div>
   <img src="/assets/images/product/extension-setting.png" alt="The settings to Dayboard's Chrome New Tab Page Extension" title="Dayboard's Chrome Extension Settings" />
 </div>
 
@@ -38,11 +38,11 @@ Before today, unless site blocking was turned off completely, the only way to tu
 
 ### Dayboard Extension Icon
 
-We've also rolled out a new feature: the Dayboard extension icon. This icon will change colours depending on if you're on a distracting site or not. Clicking on the icon will expand to give you more information about the site blocker and a few quick shortcuts.
+We've also rolled out a new upgrade: the Dayboard extension icon. This icon will change colours depending on if you're on a distracting site or not. Clicking on the icon will expand to give you more information about the site blocker and a few quick shortcuts.
 
 **Here's how it works**:
 
-*If the icon is green*, the website is not currently on your blocked list. Click on the browser icon will reveal a shortcut to add the current page as a distracting site, or how much time you have left for browsing a distracting site.
+*If the icon is green*, the website is not currently on your blocked list. Clicking on the browser icon will reveal a shortcut to add the current page as a distracting site, or how much time you have left for browsing a distracting site.
 
 <div>
   <img src="/assets/images/product/site-blocker-break-green-notification.png" title="Dayboard's site blocker icon turns green to indicate you're on a website that can be blocked." alt="Dayboard Site Blocker Extension Icon - Green">
