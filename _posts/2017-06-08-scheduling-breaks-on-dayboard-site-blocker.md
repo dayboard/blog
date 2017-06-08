@@ -3,8 +3,9 @@ layout: post
 title: "Site Blockers Schedules and Browser Extension Icons"
 date: 2017-06-08 10:00:00 UTC-05:00
 categories: Product
-disqus_identifier:
+disqus_identifier: 13
 author: abhi
+published: true
 teaser_src: "/assets/images/teaser/site-blocker-schedule.png"
 excerpt: "You can now have more control over when you want site blocking to occur using our scheduling feature. Set active days, schedule break times, and quickly see how much distracting time you have left on any given moment."
 ---
