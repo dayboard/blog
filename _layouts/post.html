@@ -12,9 +12,8 @@ layout: default
     <h3 class-"post-meta-category"><a href="{{ site.url }}">Blog</a> • {{ page.categories }}</h3>
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
-      {% if author %}
-        <em>Written by</em> <a href="http://twitter.com/{{ author.twitter }}">{{ author.name }}</a><br/>
-      {% endif %}
+      {% assign author = site.data.people[page.author] %}
+        <em>Written by</em> <a rel="author" href="http://twitter.com/{{ author.twitter }}" title="{{ author.name }}">{{ author.name }}</a><br/>
       {{ page.date | date: "%b %-d, %Y" }}
       {% if page.meta %}
        • {{ page.meta }}
@@ -29,6 +28,7 @@ layout: default
 
     {% include share-buttons.html %}
 
+    {% assign author = site.data.people[page.author] %}
     <section class="author">
       <img class="profile" src="{{ author.avatar_url }}" />
       <h3>About the Author</h3>

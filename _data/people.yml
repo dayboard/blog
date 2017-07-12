@@ -1,0 +1,39 @@
+jenn:
+  name: "Jennifer Lo"
+  display_name: "Jennifer"
+  avatar_url: "/assets/images/avatars/jenn-lo.jpg"
+  bio: >
+    Jennifer Lo is the co-founder and marketing lead at Dayboard. She's always down for an outdoor adventure, good company, and great wine.
+  twitter: jennlo_
+
+john:
+  name: "John Chan"
+  display_name: "John"
+  avatar_url: "/assets/images/avatars/john-chan.jpg"
+  bio: >
+    John Chan is the co-founder and product lead at Dayboard. He often thinks out loud and is perfectly happy with having a conversion with himself. When he's not building Dayboard, he's likely binge playing video games.
+  twitter: jtcchan
+
+abhi:
+  name: "Abhi Vair"
+  display_name: "Abhi"
+  avatar_url: "/assets/images/avatars/abhi-vair.jpg"
+  bio: >
+    Abhi Vair is a full stack developer at Dayboard. She's your classic nightowl, loves late night coffee runs and is always up for a adventure.
+
+# Guest Authors
+kat:
+  name: "Kat Boogaard"
+  display_name: "Kat"
+  avatar_url: "/assets/images/avatars/kat-boogaard.jpg"
+  bio: >
+    Kat is a Midwest-based freelance writer (writing this article for AND CO) who has a real passion for helping other freelancers grow their businesses. She has written for many publications including Forbes, Inc., Fast Company, Business Insider, Time, and Mashable.
+  twitter: kat_boogaard
+
+courtney:
+  name: "Courtney Apps"
+  display_name: "Courtney"
+  avatar_url: "/assets/images/avatars/courtney-apps.jpg"
+  bio: >
+    Courtney Apps is a freelance writer and business blogger based in Vancouver, Canada. She specializes in creating share-worthy content that helps small businesses succeed. Find her on Twitter or LinkedIn!
+  twitter:
