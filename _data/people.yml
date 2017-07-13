@@ -5,6 +5,8 @@ jenn:
   bio: >
     Jennifer Lo is the co-founder and marketing lead at Dayboard. She's always down for an outdoor adventure, good company, and great wine.
   twitter: jennlo_
+  linkedin: jennifertklo
+  github: jennlo
 
 john:
   name: "John Chan"
@@ -13,6 +15,8 @@ john:
   bio: >
     John Chan is the co-founder and product lead at Dayboard. He often thinks out loud and is perfectly happy with having a conversion with himself. When he's not building Dayboard, he's likely binge playing video games.
   twitter: jtcchan
+  linkedin: jtcchan
+  github: jtcchan
 
 abhi:
   name: "Abhi Vair"
@@ -20,6 +24,8 @@ abhi:
   avatar_url: "/assets/images/avatars/abhi-vair.jpg"
   bio: >
     Abhi Vair is a full stack developer at Dayboard. She's your classic nightowl, loves late night coffee runs and is always up for a adventure.
+  linkedin: abhi-vair
+  github: LifeofCode
 
 # Guest Authors
 kat:
@@ -29,6 +35,8 @@ kat:
   bio: >
     Kat is a Midwest-based freelance writer (writing this article for AND CO) who has a real passion for helping other freelancers grow their businesses. She has written for many publications including Forbes, Inc., Fast Company, Business Insider, Time, and Mashable.
   twitter: kat_boogaard
+  linkedin: katboogaard
+  website: katboogaard.com
   link: and.co
 
 courtney:
