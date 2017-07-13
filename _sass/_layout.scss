@@ -583,7 +583,8 @@ hr {
     }
 
     h3,
-    .bio {
+    .bio,
+    .author-links {
       margin-left: 135px;
 
       @include media-query($on-laptop) {
@@ -600,6 +601,20 @@ hr {
       padding-left: 134px;
 
       @include media-query($on-palm) { margin-left: 105px; }
+    }
+
+    .author-links {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin-right: 5px;
+
+        .fa {
+          color: $lg3;
+          font-size: 28px;
+        }
+      }
     }
   }
 
