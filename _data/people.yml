@@ -29,11 +29,14 @@ kat:
   bio: >
     Kat is a Midwest-based freelance writer (writing this article for AND CO) who has a real passion for helping other freelancers grow their businesses. She has written for many publications including Forbes, Inc., Fast Company, Business Insider, Time, and Mashable.
   twitter: kat_boogaard
+  link: and.co
 
 courtney:
   name: "Courtney Apps"
   display_name: "Courtney"
   avatar_url: "/assets/images/avatars/courtney-apps.jpg"
   bio: >
-    Courtney Apps is a freelance writer and business blogger based in Vancouver, Canada. She specializes in creating share-worthy content that helps small businesses succeed. Find her on Twitter or LinkedIn!
-  twitter:
+    Courtney Apps is a freelance writer and business blogger based in Vancouver, Canada. She specializes in creating share-worthy content that helps small businesses succeed.
+  twitter: courtneyapps
+  linkedin: courtneyapps
+  website: courtneyapps.com
