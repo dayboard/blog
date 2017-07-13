@@ -29,7 +29,7 @@ layout: default
         <a class="post-link" href="{{ featured_post.url | prepend: site.baseurl }}">{{ featured_post.title }}</a>
       </h1>
       <p>{{ featured_post.excerpt | truncatewords: 40 }}</p>
-      {% assign author = site.author[featured_post.author] %}
+      {% assign author = site.data.people[featured_post.author] %}
       <span class="post-meta">By <a href="http://twitter.com/{{ author.twitter }}">{{ author.name }}</a> • {{ featured_post.date | date: "%b %Y" }}</span>
     </section>
   </div>
@@ -64,7 +64,7 @@ layout: default
           </h2>
 
           <p>{{ post.excerpt | truncatewords: 25 }}</p>
-          {% assign author = site.author[post.author] %}
+          {% assign author = site.data.people[post.author] %}
           <span class="post-meta">By <a href="http://twitter.com/{{ author.twitter }}">{{ author.name }}</a> • {{ post.date | date: "%b %Y" }}</span>
           </section>
         </li>
